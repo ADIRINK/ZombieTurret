@@ -35,6 +35,7 @@
   },
   "name":"ZombieTurret",
   "resources":[
+    {"id":{"name":"obj_anchor","path":"objects/obj_anchor/obj_anchor.yy",},},
     {"id":{"name":"obj_base","path":"objects/obj_base/obj_base.yy",},},
     {"id":{"name":"obj_bullet","path":"objects/obj_bullet/obj_bullet.yy",},},
     {"id":{"name":"obj_ground","path":"objects/obj_ground/obj_ground.yy",},},
@@ -42,6 +43,7 @@
     {"id":{"name":"obj_wall","path":"objects/obj_wall/obj_wall.yy",},},
     {"id":{"name":"obj_zombie","path":"objects/obj_zombie/obj_zombie.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"id":{"name":"spr_anchor_empty","path":"sprites/spr_anchor_empty/spr_anchor_empty.yy",},},
     {"id":{"name":"spr_base","path":"sprites/spr_base/spr_base.yy",},},
     {"id":{"name":"spr_bullet","path":"sprites/spr_bullet/spr_bullet.yy",},},
     {"id":{"name":"spr_ground","path":"sprites/spr_ground/spr_ground.yy",},},

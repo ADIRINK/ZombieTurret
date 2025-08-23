@@ -11,15 +11,33 @@ target = instance_nearest(x, y, obj_zombie);
 /// @DnDArgument : "expr" "target != noone && point_distance(x, y, target.x, target.y) <= range"
 if(target != noone && point_distance(x, y, target.x, target.y) <= range){	/// @DnDAction : YoYo Games.Common.Variable
 	/// @DnDVersion : 1
-	/// @DnDHash : 78456F4C
+	/// @DnDHash : 11C7CC98
+	/// @DnDInput : 4
 	/// @DnDParent : 25D4625E
-	/// @DnDArgument : "expr" " point_direction(x, y, target.x, target.y)"
-	/// @DnDArgument : "var" "barrel_angle"
-	barrel_angle =  point_direction(x, y, target.x, target.y);
+	/// @DnDArgument : "expr" "point_distance(x, y, target.x, target.y)"
+	/// @DnDArgument : "expr_1" "dist / 10"
+	/// @DnDArgument : "expr_2" "target.x - (target.is_climbing ? 0 : target.move_speed) * bullet_time"
+	/// @DnDArgument : "expr_3" "target.y"
+	/// @DnDArgument : "var" "dist"
+	/// @DnDArgument : "var_1" "bullet_time"
+	/// @DnDArgument : "var_2" "predict_x"
+	/// @DnDArgument : "var_3" "predict_y"
+	dist = point_distance(x, y, target.x, target.y);
+	bullet_time = dist / 10;
+	predict_x = target.x - (target.is_climbing ? 0 : target.move_speed) * bullet_time;
+	predict_y = target.y;
 
 	/// @DnDAction : YoYo Games.Common.Variable
 	/// @DnDVersion : 1
-	/// @DnDHash : 02657246
+	/// @DnDHash : 78456F4C
+	/// @DnDParent : 25D4625E
+	/// @DnDArgument : "expr" " point_direction(x, y, predict_x, predict_y)"
+	/// @DnDArgument : "var" "barrel_angle"
+	barrel_angle =  point_direction(x, y, predict_x, predict_y);
+
+	/// @DnDAction : YoYo Games.Common.Variable
+	/// @DnDVersion : 1
+	/// @DnDHash : 4DFED8CF
 	/// @DnDParent : 25D4625E
 	/// @DnDArgument : "expr" "-1"
 	/// @DnDArgument : "expr_relative" "1"
