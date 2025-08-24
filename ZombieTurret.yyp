@@ -37,6 +37,7 @@
   "resources":[
     {"id":{"name":"obj_anchor","path":"objects/obj_anchor/obj_anchor.yy",},},
     {"id":{"name":"obj_base","path":"objects/obj_base/obj_base.yy",},},
+    {"id":{"name":"obj_build_menu","path":"objects/obj_build_menu/obj_build_menu.yy",},},
     {"id":{"name":"obj_bullet","path":"objects/obj_bullet/obj_bullet.yy",},},
     {"id":{"name":"obj_ground","path":"objects/obj_ground/obj_ground.yy",},},
     {"id":{"name":"obj_turret","path":"objects/obj_turret/obj_turret.yy",},},
