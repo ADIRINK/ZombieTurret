@@ -1,7 +1,6 @@
 /// @DnDAction : YoYo Games.Common.Variable
 /// @DnDVersion : 1
 /// @DnDHash : 00E8924D
-/// @DnDComment : Calculate wave difficulty
 /// @DnDInput : 3
 /// @DnDArgument : "expr" "1"
 /// @DnDArgument : "expr_1" "ds_list_create()"
