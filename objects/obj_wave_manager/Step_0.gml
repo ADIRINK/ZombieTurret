@@ -84,7 +84,34 @@ if(spawn_timer >= spawn_rate){	/// @DnDAction : YoYo Games.Common.If_Variable
 			/// @DnDVersion : 1
 			/// @DnDHash : 58442708
 			/// @DnDParent : 204292F0
-			if(variable == 0){}
+			/// @DnDArgument : "var" "wave_number"
+			/// @DnDArgument : "op" "2"
+			/// @DnDArgument : "value" "2"
+			if(wave_number > 2){	/// @DnDAction : YoYo Games.Common.Apply_To
+				/// @DnDVersion : 1
+				/// @DnDHash : 40D6B006
+				/// @DnDApplyTo : {obj_game_controller}
+				/// @DnDParent : 58442708
+				with(obj_game_controller) {
+					/// @DnDAction : YoYo Games.Common.Variable
+					/// @DnDVersion : 1
+					/// @DnDHash : 78C9079C
+					/// @DnDInput : 2
+					/// @DnDParent : 40D6B006
+					/// @DnDArgument : "expr" "true"
+					/// @DnDArgument : "expr_1" "true"
+					/// @DnDArgument : "var" "game_over"
+					/// @DnDArgument : "var_1" "victory"
+					game_over = true;
+					victory = true;
+				
+					/// @DnDAction : YoYo Games.Instances.Destroy_Instance
+					/// @DnDVersion : 1
+					/// @DnDHash : 28B12A9F
+					/// @DnDApplyTo : other
+					/// @DnDParent : 40D6B006
+					with(other) instance_destroy();
+				}}
 		
 			/// @DnDAction : YoYo Games.Common.Else
 			/// @DnDVersion : 1
