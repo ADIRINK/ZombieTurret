@@ -8,8 +8,8 @@
   "name":"obj_bullet",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Turrets",
+    "path":"folders/Objects/Turrets.yy",
   },
   "parentObjectId":null,
   "persistent":false,

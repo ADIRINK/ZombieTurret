@@ -24,4 +24,15 @@ if(!(anchor_ref == noone)){	/// @DnDAction : YoYo Games.Common.Variable
 	/// @DnDArgument : "y1" "temp_y - 400"
 	/// @DnDArgument : "x2" "temp_x + 400"
 	/// @DnDArgument : "y2" "temp_y + 400"
-	draw_ellipse(temp_x - 400, temp_y - 400, temp_x + 400, temp_y + 400, 1);}
+	draw_ellipse(temp_x - 400, temp_y - 400, temp_x + 400, temp_y + 400, 1);
+
+	/// @DnDAction : YoYo Games.Drawing.Draw_Value
+	/// @DnDVersion : 1
+	/// @DnDHash : 20D4E526
+	/// @DnDParent : 4AFB1563
+	/// @DnDArgument : "x" "-30"
+	/// @DnDArgument : "x_relative" "1"
+	/// @DnDArgument : "y" "-30"
+	/// @DnDArgument : "y_relative" "1"
+	/// @DnDArgument : "caption" ""50""
+	draw_text(x + -30, y + -30, string("50") + "");}

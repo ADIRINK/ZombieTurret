@@ -7,7 +7,22 @@ if(hp <= 0){	/// @DnDAction : YoYo Games.Instances.Destroy_Instance
 	/// @DnDVersion : 1
 	/// @DnDHash : 330F99C1
 	/// @DnDParent : 44F9B129
-	instance_destroy();}
+	instance_destroy();
+
+	/// @DnDAction : YoYo Games.Common.Apply_To
+	/// @DnDVersion : 1
+	/// @DnDHash : 54C9A5FE
+	/// @DnDApplyTo : {obj_game_controller}
+	/// @DnDParent : 44F9B129
+	with(obj_game_controller) {
+		/// @DnDAction : YoYo Games.Common.Variable
+		/// @DnDVersion : 1
+		/// @DnDHash : 620D219A
+		/// @DnDParent : 54C9A5FE
+		/// @DnDArgument : "expr" "currency + other.reward"
+		/// @DnDArgument : "var" "currency"
+		currency = currency + other.reward;
+	}}
 
 /// @DnDAction : YoYo Games.Common.If_Variable
 /// @DnDVersion : 1
