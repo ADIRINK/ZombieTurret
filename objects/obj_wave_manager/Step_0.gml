@@ -104,13 +104,6 @@ if(spawn_timer >= spawn_rate){	/// @DnDAction : YoYo Games.Common.If_Variable
 					/// @DnDArgument : "var_1" "victory"
 					game_over = true;
 					victory = true;
-				
-					/// @DnDAction : YoYo Games.Instances.Destroy_Instance
-					/// @DnDVersion : 1
-					/// @DnDHash : 28B12A9F
-					/// @DnDApplyTo : other
-					/// @DnDParent : 40D6B006
-					with(other) instance_destroy();
 				}}
 		
 			/// @DnDAction : YoYo Games.Common.Else
