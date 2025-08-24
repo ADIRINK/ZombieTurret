@@ -47,6 +47,7 @@
     {"id":{"name":"obj_ground","path":"objects/obj_ground/obj_ground.yy",},},
     {"id":{"name":"obj_turret","path":"objects/obj_turret/obj_turret.yy",},},
     {"id":{"name":"obj_wall","path":"objects/obj_wall/obj_wall.yy",},},
+    {"id":{"name":"obj_wave_manager","path":"objects/obj_wave_manager/obj_wave_manager.yy",},},
     {"id":{"name":"obj_zombie","path":"objects/obj_zombie/obj_zombie.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"spr_anchor_empty","path":"sprites/spr_anchor_empty/spr_anchor_empty.yy",},},
